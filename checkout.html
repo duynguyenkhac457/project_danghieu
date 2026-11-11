@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Xác nhận thanh toán | Porsche</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site-header"><a class="logo" href="index.html">PORSCHE</a><nav class="main-nav"><a href="index.html#models">Tiếp tục mua xe</a><a href="history.html">Lịch sử mua</a></nav></header>
+<main class="page-wrap"><div class="page-title"><p class="eyebrow">CHECKOUT</p><h1>Xác nhận thanh toán</h1><p>Kiểm tra đơn hàng, điền thông tin khách hàng và quét mã QR.</p></div>
+<div class="checkout-layout"><section class="panel"><h2>Thông tin khách hàng</h2><form id="checkoutForm" class="form-two" novalidate>
+<div class="field"><label>Họ và tên *</label><input name="customerName" required></div><div class="field"><label>Email *</label><input name="email" type="email" required></div>
+<div class="field"><label>Số điện thoại *</label><input name="phone" type="tel" pattern="[0-9+ .-]{9,15}" required></div><div class="field span-two"><label>Địa chỉ nhận tư vấn / liên hệ *</label><input name="address" required placeholder="Số nhà, đường, phường/xã, tỉnh/thành"></div>
+<div class="field span-two"><label>Ghi chú</label><textarea name="note" placeholder="Thông tin bổ sung (không bắt buộc)"></textarea></div>
+<div class="span-two"><div class="notice">Các trường có dấu * bắt buộc phải nhập. Khi bấm xác nhận, website sẽ lưu đơn hàng ở trạng thái khách đã xác nhận chuyển khoản, chưa xác minh giao dịch ngân hàng.</div><button class="button button-dark" type="submit">XÁC NHẬN THANH TOÁN</button></div>
+</form></section>
+<aside class="panel"><h2>Đơn hàng bạn</h2><div id="checkoutItems" class="order-list"></div><div class="total-line"><span>Tổng thanh toán</span><strong id="checkoutTotal">0 ₫</strong></div>
+<div class="qr-box"><strong>MÃ QR THANH TOÁN</strong><img src="qr-cua-tao.png" alt=""><p class="small-note"><b></b></p></div>
+<p class="small-note">Chỉ xác nhận sau khi đã tự kiểm tra và chuyển khoản. Website demo không tự kết nối ngân hàng.</p></aside></div></main><script src="script.js"></script></body></html>

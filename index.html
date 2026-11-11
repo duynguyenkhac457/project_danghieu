@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Porsche | Showroom trực tuyến</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">PORSCHE</a>
+  <nav class="main-nav"><a href="index.html#models">Các dòng xe</a><a href="testdrive.html">Đặt lịch lái thử</a><a href="index.html#contact">Liên hệ</a></nav>
+  <div class="header-actions"><a class="nav-link" id="accountLink" href="login.html">Đăng nhập</a><a class="nav-link" href="history.html">Lịch sử mua</a><button class="cart-button" id="openCart">Giỏ hàng <span id="cartCount">0</span></button></div>
+</header>
+<main>
+<section class="hero"><div class="hero-content"><p class="eyebrow">THIẾT KẾ · HIỆU SUẤT · CẢM XÚC</p><h1>Driven by<br>dreams.</h1><p>Khám phá thế giới xe thể thao Porsche.</p><a class="button button-light" href="#models">Khám phá các dòng xe</a></div></section>
+<section class="section" id="models">
+ <div class="section-heading"><p class="eyebrow">PORSCHE MODEL RANGE</p><h2>Các dòng xe</h2><p>Tìm kiếm, lọc giá và khám phá mẫu xe phù hợp.</p></div>
+ <div class="toolbar">
+  <input id="searchInput" type="search" placeholder="Tìm theo tên xe...">
+  <select id="priceFilter"><option value="all">Tất cả mức giá</option><option value="under3">Dưới 3 tỷ</option><option value="3to5">Từ 3 đến 5 tỷ</option><option value="over5">Trên 5 tỷ</option></select>
+  <select id="sortSelect"><option value="default">Sắp xếp mặc định</option><option value="low">Giá thấp đến cao</option><option value="high">Giá cao đến thấp</option><option value="az">Tên A đến Z</option></select>
+ </div>
+ <div class="model-grid" id="modelGrid"></div><p class="empty-state hidden" id="noResults">Không tìm thấy mẫu xe phù hợp.</p>
+</section>
+<section class="feature"><div><p class="eyebrow">THE PORSCHE EXPERIENCE</p><h2>Mỗi hành trình là một trải nghiệm.</h2><p>Thiết kế tinh tế, công nghệ hiện đại và cảm giác lái đầy cảm xúc.</p><a class="button button-light" href="testdrive.html">Đặt lịch lái thử</a></div></section>
+<section class="section contact" id="contact"><p class="eyebrow">GET IN TOUCH</p><h2>Để lại thông tin tư vấn</h2><form id="contactForm" class="form-grid"><input required placeholder="Họ và tên"><input required type="tel" placeholder="Số điện thoại"><textarea placeholder="Nội dung cần tư vấn"></textarea><button class="button button-dark">Gửi yêu cầu</button></form></section>
+</main>
+<footer>PORSCHE — Website demo học tập. Giá và thông số chỉ mang tính minh họa.</footer>
+<div class="cart-overlay" id="cartOverlay"></div><aside class="cart-drawer" id="cartDrawer">
+ <div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Giỏ hàng</h2></div><button class="icon-button" id="closeCart">✕</button></div>
+ <div class="cart-items" id="cartItems"></div><div class="cart-footer"><div class="cart-total"><span>Tổng cộng</span><strong id="cartTotal">0 ₫</strong></div><a class="button button-dark full button-center" href="checkout.html">Tiến hành thanh toán</a><p class="small-note">Thanh toán là quy trình mô phỏng, không kết nối ngân hàng.</p></div>
+</aside>
+<script src="script.js"></script></body></html>
